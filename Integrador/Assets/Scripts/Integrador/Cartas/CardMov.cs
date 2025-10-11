@@ -18,12 +18,13 @@ public class CardMov : MonoBehaviour
     public Vector3 dragOffset;          // Offset entre dedo e centro do objeto
     [SerializeField] bool has2D;                  // Tem Collider2D?
     //[SerializeField] bool has3D;                  // Tem Collider 3D?
+    public int cardIndex;
 
     
 
 
     // >>> EVENTO PARA O MANAGER <<<
-    public System.Action<SwipeDecision> OnSwipeReleased;
+    public System.Action<CardMov, SwipeDecision> OnSwipeReleased;
 
     void Awake()
     {
@@ -77,7 +78,7 @@ public class CardMov : MonoBehaviour
                     : transform.position.y < 0f ? SwipeDecision.Mão
                     : SwipeDecision.None;
 
-                OnSwipeReleased?.Invoke(decision); // avisa o Manager
+                OnSwipeReleased?.Invoke(this, decision); // avisa o Manager
 
                 activeFingerId = -1;
             }
@@ -112,4 +113,5 @@ public class CardMov : MonoBehaviour
         // Se não tiver collider, aceita sempre (começa a arrastar em qualquer lugar)
         return true;
     }
+   
 }

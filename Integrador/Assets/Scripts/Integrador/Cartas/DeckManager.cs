@@ -51,8 +51,6 @@ public class DeckManager : MonoBehaviour
     private void Start()
     {
         RefreshUI();
-        
-        
     }
 
     private void Update()
@@ -75,7 +73,6 @@ public class DeckManager : MonoBehaviour
 
     void RefreshUI()
     {
-        
         if (tentativasText) tentativasText.text = tentativas.ToString();
     }
 
@@ -89,35 +86,44 @@ public class DeckManager : MonoBehaviour
         var prefab = cardSprites[UnityEngine.Random.Range(0, cardSprites.Length)];
 
         var go = Instantiate(cardPrefab[index], position, rotation);
+        go.SetActive(true);
+
 
 
         if (cardSprites != null && cardSprites.Length > 0) 
         {
             var spriteRender = go.GetComponent<SpriteRenderer>() ?? go.GetComponentInChildren<SpriteRenderer>();
-            if(spriteRender) 
+            if(spriteRender != null) 
             {
-              spriteRender.sprite = cardSprites[spriteIndex];
+                Debug.Log($"Instanciando carta {index} com spriteIndex {spriteIndex}");
+
+                spriteRender.sprite = cardSprites[spriteIndex];
                 spriteIndex = (spriteIndex + 1) % cardSprites.Length;
             }
         }
 
         currentCard = go.GetComponent<CardMov>();
-        if (currentCard) currentCard.OnSwipeReleased += OnCardReleased;
-
+        if (currentCard)
+        {
+            currentCard.cardIndex = index;
+            currentCard.OnSwipeReleased += OnCardReleased;
+        }
 
 
     }
 
-    void OnCardReleased(SwipeDecision decision)
+    void OnCardReleased(CardMov card, SwipeDecision decision)
     {
         if ( decision == SwipeDecision.None) return;
 
-        var index = 0; // tem que receber o index da carta
+        int index = card.cardIndex;
         HandleDecision(decision, index);
-
+        Destroy(card.gameObject, 1f);
+        SpawnNextCard(index);
+        
     }
 
-    private void HandleDecision(SwipeDecision decision, int index)
+    private void HandleDecision( SwipeDecision decision, int index)
     {
         if (decision == SwipeDecision.Jogada)
         {
@@ -126,8 +132,8 @@ public class DeckManager : MonoBehaviour
                 score += 0.10f;
                 barra.AlternarScore(score);
             }
-            Destroy(currentCard.gameObject, 1f);
-            SpawnNextCard(index);
+
+            
             RefreshUI();
             if (score > 1)
             {
@@ -138,7 +144,7 @@ public class DeckManager : MonoBehaviour
         if (decision == SwipeDecision.Mão)
         {
             tentativas--;
-           
+            
             RefreshUI();
 
             if (tentativas <= 0 && !perdeu)

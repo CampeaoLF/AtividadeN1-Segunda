@@ -1232,7 +1232,7 @@ MonoBehaviour:
   tentativas: 10
   tentativasText: {fileID: 409407443}
   spriteIndex: 0
-  currentCard: {fileID: 5726815940899473763, guid: 140568e8e354fbb4eabe583584a4ddce, type: 3}
+  currentCard: {fileID: 665013233719488834, guid: 6f3a56d2717bece40bb8e2e583975b38, type: 3}
   derrotaUI: {fileID: 837689480}
   barra: {fileID: 2098461477}
   cardPrefab:
