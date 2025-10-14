@@ -51,6 +51,11 @@ public class DeckManager : MonoBehaviour
     private void Start()
     {
         RefreshUI();
+        GameObject card = GameObject.FindGameObjectWithTag("Ruin");
+        if (card.CompareTag("Ruin")) 
+        {
+            score -= 0.10f;
+        }
     }
 
     private void Update()
@@ -159,6 +164,7 @@ public class DeckManager : MonoBehaviour
         
         
     }
+
 
    
 

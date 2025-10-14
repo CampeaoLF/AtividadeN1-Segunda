@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5726815940899473763}
   m_Layer: 0
   m_Name: cartaB
-  m_TagString: Untagged
+  m_TagString: Boa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,3 +153,4 @@ MonoBehaviour:
   screenZ: 0
   dragOffset: {x: 0, y: 0, z: 0}
   has2D: 0
+  cardIndex: 0

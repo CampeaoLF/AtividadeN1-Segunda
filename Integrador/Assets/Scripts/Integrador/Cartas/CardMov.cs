@@ -30,7 +30,7 @@ public class CardMov : MonoBehaviour
     {
         cam = Camera.main;
         has2D = GetComponent<Collider2D>() != null;
-
+        
         //has3D = GetComponent<Collider>() != null;
     }
 
