@@ -51,11 +51,6 @@ public class DeckManager : MonoBehaviour
     private void Start()
     {
         RefreshUI();
-        GameObject card = GameObject.FindGameObjectWithTag("Ruin");
-        if (card.CompareTag("Ruin")) 
-        {
-            score -= 0.10f;
-        }
     }
 
     private void Update()
@@ -132,34 +127,43 @@ public class DeckManager : MonoBehaviour
     {
         if (decision == SwipeDecision.Jogada)
         {
-            if (currentCard == true)
+            
+            GameObject card = cardPrefab[index];
+            if (card.CompareTag("Ruin"))
+            {
+                score -= 0.10f;
+               
+            }
+            else if (card.CompareTag("Boa"))
             {
                 score += 0.10f;
-                barra.AlternarScore(score);
             }
 
-            
-            RefreshUI();
             if (score > 1)
             {
                 SceneManager.LoadScene("Vitoria");
             }
+            
+            tentativas--;
+            barra.AlternarScore(score);
+            RefreshUI();
+           
         }
 
         if (decision == SwipeDecision.Mão)
         {
             tentativas--;
-            
             RefreshUI();
-
             if (tentativas <= 0 && !perdeu)
             {
 
                 derrotaUI.SetActive(true);
-                
+
                 perdeu = true;
-                
+
             }
+            }
+
         }
         
         
