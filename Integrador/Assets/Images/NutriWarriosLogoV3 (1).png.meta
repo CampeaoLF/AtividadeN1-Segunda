@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: db71899273dcd1143b8cc2548b745a4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6286031154499643673
+    second: NutriWarriosLogoV3 (1)_0
+  - first:
+      213: -3342676907968950085
+    second: NutriWarriosLogoV3 (1)_1
+  - first:
+      213: -7514304512884033325
+    second: NutriWarriosLogoV3 (1)_2
+  - first:
+      213: -3604006864329645913
+    second: NutriWarriosLogoV3 (1)_3
+  - first:
+      213: -461708973941462420
+    second: NutriWarriosLogoV3 (1)_4
+  - first:
+      213: -7346857021443520704
+    second: NutriWarriosLogoV3 (1)_5
+  - first:
+      213: 4002005138947397295
+    second: NutriWarriosLogoV3 (1)_6
+  - first:
+      213: -9005528182066125225
+    second: NutriWarriosLogoV3 (1)_7
+  - first:
+      213: 7978019110051264218
+    second: NutriWarriosLogoV3 (1)_8
+  - first:
+      213: -6614713501648623106
+    second: NutriWarriosLogoV3 (1)_9
+  - first:
+      213: 28896952659684239
+    second: NutriWarriosLogoV3 (1)_10
+  - first:
+      213: 4252851489329886425
+    second: NutriWarriosLogoV3 (1)_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 88
+        width: 1012
+        height: 494
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6920548f783c8a0800000000000000
+      internalID: -6286031154499643673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 329
+        width: 222
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb01c9dff0d6c91d0800000000000000
+      internalID: -3342676907968950085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 329
+        width: 292
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8be67abd3d7b790800000000000000
+      internalID: -7514304512884033325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 479
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0ef8b0adefbfdc0800000000000000
+      internalID: -3604006864329645913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 159
+        width: 402
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6aeb9a622ea799f0800000000000000
+      internalID: -461708973941462420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 119
+        width: 242
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047464dd678ba0a90800000000000000
+      internalID: -7346857021443520704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 239
+        width: 202
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa65f38687af98730800000000000000
+      internalID: 4002005138947397295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 299
+        width: 82
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756ed2de4dfe50380800000000000000
+      internalID: -9005528182066125225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 89
+        width: 242
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad632e97c1e97be60800000000000000
+      internalID: 7978019110051264218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 119
+        width: 152
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9e043dd11d334a0800000000000000
+      internalID: -6614713501648623106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 109
+        width: 42
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b2f5610a9a66000800000000000000
+      internalID: 28896952659684239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NutriWarriosLogoV3 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 139
+        width: 92
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4bfff95e9250b30800000000000000
+      internalID: 4252851489329886425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 446dd082e852ddd4db69359903df93fb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NutriWarriosLogoV3 (1)_0: -6286031154499643673
+      NutriWarriosLogoV3 (1)_1: -3342676907968950085
+      NutriWarriosLogoV3 (1)_10: 28896952659684239
+      NutriWarriosLogoV3 (1)_11: 4252851489329886425
+      NutriWarriosLogoV3 (1)_2: -7514304512884033325
+      NutriWarriosLogoV3 (1)_3: -3604006864329645913
+      NutriWarriosLogoV3 (1)_4: -461708973941462420
+      NutriWarriosLogoV3 (1)_5: -7346857021443520704
+      NutriWarriosLogoV3 (1)_6: 4002005138947397295
+      NutriWarriosLogoV3 (1)_7: -9005528182066125225
+      NutriWarriosLogoV3 (1)_8: 7978019110051264218
+      NutriWarriosLogoV3 (1)_9: -6614713501648623106
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

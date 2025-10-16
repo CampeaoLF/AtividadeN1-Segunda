@@ -4,6 +4,7 @@ using TMPro;
 using System;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Reflection;
 
 
 public class DeckManager : MonoBehaviour
@@ -37,14 +38,14 @@ public class DeckManager : MonoBehaviour
 
     private void Awake()
     {
-        
+       
     }
 
     private void OnEnable()
     {
         for (int index = 0; index < cardPrefab.Length; index++)
         {
-        SpawnNextCard(index);
+            SpawnNextCard(index);
         }
     }
 
@@ -76,11 +77,12 @@ public class DeckManager : MonoBehaviour
         if (tentativasText) tentativasText.text = tentativas.ToString();
     }
 
-    
+
 
     void SpawnNextCard(int index)
     {
-        var position = cardPos[index] ? cardPos[index].position : Vector3.zero;  
+        
+        var position = cardPos[index] ? cardPos[index].position : Vector3.zero;
         var rotation = cardPos[index] ? cardPos[index].rotation : Quaternion.identity;
 
         var prefab = cardSprites[UnityEngine.Random.Range(0, cardSprites.Length)];
@@ -90,12 +92,14 @@ public class DeckManager : MonoBehaviour
 
 
 
-        if (cardSprites != null && cardSprites.Length > 0) 
+
+
+        if (cardSprites != null && cardSprites.Length > 0)
         {
             var spriteRender = go.GetComponent<SpriteRenderer>() ?? go.GetComponentInChildren<SpriteRenderer>();
-            if(spriteRender != null) 
+            if (spriteRender != null)
             {
-                Debug.Log($"Instanciando carta {index} com spriteIndex {spriteIndex}");
+                
 
                 spriteRender.sprite = cardSprites[spriteIndex];
                 spriteIndex = (spriteIndex + 1) % cardSprites.Length;
@@ -105,6 +109,7 @@ public class DeckManager : MonoBehaviour
         currentCard = go.GetComponent<CardMov>();
         if (currentCard)
         {
+            var spriteRender = go.GetComponent<SpriteRenderer>() ?? go.GetComponentInChildren<SpriteRenderer>();
             currentCard.cardIndex = index;
             currentCard.OnSwipeReleased += OnCardReleased;
         }
@@ -112,27 +117,28 @@ public class DeckManager : MonoBehaviour
 
     }
 
+
     void OnCardReleased(CardMov card, SwipeDecision decision)
     {
-        if ( decision == SwipeDecision.None) return;
+        if (decision == SwipeDecision.None) return;
 
         int index = card.cardIndex;
         HandleDecision(decision, index);
         Destroy(card.gameObject, 1f);
         SpawnNextCard(index);
-        
+
     }
 
-    private void HandleDecision( SwipeDecision decision, int index)
+    private void HandleDecision(SwipeDecision decision, int index)
     {
         if (decision == SwipeDecision.Jogada)
         {
-            
+
             GameObject card = cardPrefab[index];
             if (card.CompareTag("Ruin"))
             {
                 score -= 0.10f;
-               
+
             }
             else if (card.CompareTag("Boa"))
             {
@@ -143,11 +149,11 @@ public class DeckManager : MonoBehaviour
             {
                 SceneManager.LoadScene("Vitoria");
             }
-            
+
             tentativas--;
             barra.AlternarScore(score);
             RefreshUI();
-           
+
         }
 
         if (decision == SwipeDecision.Mão)
@@ -162,20 +168,14 @@ public class DeckManager : MonoBehaviour
                 perdeu = true;
 
             }
-            }
-
         }
-        
-        
+
     }
-
-
-   
 
     public void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+}  
+        
 
-    
-}
