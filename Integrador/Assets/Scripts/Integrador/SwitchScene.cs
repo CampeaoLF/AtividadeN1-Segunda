@@ -21,4 +21,9 @@ public class SwitchScene : MonoBehaviour
        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void nextScene()
+    {
+        
+    }
+
 }
