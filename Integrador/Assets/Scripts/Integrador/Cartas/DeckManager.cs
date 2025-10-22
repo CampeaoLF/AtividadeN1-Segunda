@@ -5,6 +5,7 @@ using System;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Reflection;
+using static UnityEditor.Progress;
 
 
 public class DeckManager : MonoBehaviour
@@ -35,6 +36,10 @@ public class DeckManager : MonoBehaviour
     public GameObject[] cardPrefab;
     public Transform[] cardPos;
     public Sprite[] cardSprites;
+
+
+    //evento que dispara para quem estiver escutando
+    public static event Action<float> OnChangeProgressBar;
 
     private void Awake()
     {
@@ -124,7 +129,7 @@ public class DeckManager : MonoBehaviour
 
         int index = card.cardIndex;
         HandleDecision(decision, index);
-        Destroy(card.gameObject, 1f);
+        Destroy(card.gameObject, 0.5f);
         SpawnNextCard(index);
 
     }
@@ -137,12 +142,12 @@ public class DeckManager : MonoBehaviour
             GameObject card = cardPrefab[index];
             if (card.CompareTag("Ruin"))
             {
-                score -= 0.10f;
+                score -= 0.15f;
 
             }
             else if (card.CompareTag("Boa"))
             {
-                score += 0.10f;
+                score += 0.15f;
             }
 
             if (score > 1)
@@ -150,17 +155,7 @@ public class DeckManager : MonoBehaviour
                 SceneManager.LoadScene("Vitoria");
             }
 
-            tentativas--;
-            barra.AlternarScore(score);
-            RefreshUI();
-
-        }
-
-        if (decision == SwipeDecision.Mão)
-        {
-            tentativas--;
-            RefreshUI();
-            if (tentativas <= 0 && !perdeu)
+            if (tentativas <= 1 && !perdeu)
             {
 
                 derrotaUI.SetActive(true);
@@ -168,6 +163,15 @@ public class DeckManager : MonoBehaviour
                 perdeu = true;
 
             }
+            tentativas--;
+            barra.AlternarScore(score);
+            OnChangeProgressBar?.Invoke(score);
+            RefreshUI();
+        }
+
+        if (decision == SwipeDecision.Mão)
+        {
+           
         }
 
     }
