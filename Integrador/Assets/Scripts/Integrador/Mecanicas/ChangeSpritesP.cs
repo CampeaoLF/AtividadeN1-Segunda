@@ -9,6 +9,7 @@ public class ChangeSpritesP : MonoBehaviour
 
     [Header("Domínio")]
     [SerializeField] private DeckManager deckManager;
+    
 
     private void OnEnable()
     {
@@ -23,6 +24,11 @@ public class ChangeSpritesP : MonoBehaviour
 
     private void OnChangeProgressBar(float valueBar)
     {
+        
+        if(valueBar >= 0 && valueBar <= 0.15f)
+        {
+            player.sprite = sprites[0];
+        }
 
         //AQUI  VAI A LÓGICA DE TROCA DE SPRITE
         //EX: if(valueBar >= 0 && valueBar <= 0.25){
@@ -38,9 +44,6 @@ public class ChangeSpritesP : MonoBehaviour
 
     private void Update()
     {
-        if (player score += 0.15f)
-        {
-            if(score == )
-        }
+        
     }
 }

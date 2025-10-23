@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteBotaoVoltar_0: 8054357086666778534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
