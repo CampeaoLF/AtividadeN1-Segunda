@@ -133,21 +133,21 @@ public class DeckManager : MonoBehaviour
         SpawnNextCard(index);
 
     }
-
+    #region HandleDecison
     private void HandleDecision(SwipeDecision decision, int index)
     {
         if (decision == SwipeDecision.Jogada)
         {
 
             GameObject card = cardPrefab[index];
-            if (card.CompareTag("Ruin"))
+            
+            if (card.CompareTag("Boa"))
+            {
+                OnChangeProgressBar(score += 0.15f);
+            }
+            else if (card.CompareTag("Ruin"))
             {
                 score -= 0.15f;
-
-            }
-            else if (card.CompareTag("Boa"))
-            {
-                score += 0.15f;
             }
 
             if (score > 1)
@@ -175,7 +175,7 @@ public class DeckManager : MonoBehaviour
         }
 
     }
-
+    #endregion
     public void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
