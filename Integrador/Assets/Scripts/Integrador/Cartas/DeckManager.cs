@@ -52,6 +52,7 @@ public class DeckManager : MonoBehaviour
         {
             SpawnNextCard(index);
         }
+       
     }
 
     private void Start()
@@ -61,10 +62,10 @@ public class DeckManager : MonoBehaviour
 
     private void Update()
     {
-        if (perdeu == true)
-        {
-            Destroy(currentCard);
-        }
+        //if (perdeu == true)
+        //{
+        //    Destroy(currentCard);
+        //}
     }
 
     private void OnDisable()
@@ -94,6 +95,8 @@ public class DeckManager : MonoBehaviour
 
         var go = Instantiate(cardPrefab[index], position, rotation);
         go.SetActive(true);
+        
+
 
 
 
@@ -110,6 +113,7 @@ public class DeckManager : MonoBehaviour
                 spriteIndex = (spriteIndex + 1) % cardSprites.Length;
             }
         }
+        
 
         currentCard = go.GetComponent<CardMov>();
         if (currentCard)
@@ -143,7 +147,7 @@ public class DeckManager : MonoBehaviour
             
             if (card.CompareTag("Boa"))
             {
-                OnChangeProgressBar(score += 0.15f);
+                OnChangeProgressBar(score += 0.18f);
             }
             else if (card.CompareTag("Ruin"))
             {

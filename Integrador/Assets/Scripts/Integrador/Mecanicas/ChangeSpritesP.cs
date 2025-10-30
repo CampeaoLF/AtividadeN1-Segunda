@@ -36,6 +36,27 @@ public class ChangeSpritesP : MonoBehaviour
             player.sprite = sprites[1];
 
         }
+        else if (valueBar >= 0.31f && valueBar <= 0.45f)
+        {
+            player.sprite = sprites[2];
+
+        }
+        else if (valueBar >= 0.46f && valueBar <= 0.60f)
+        {
+            player.sprite = sprites[3];
+
+        }
+        else if (valueBar >= 0.61f && valueBar <= 0.76f)
+        {
+            player.sprite = sprites[4];
+
+        }
+        else if (valueBar >= 0.77f && valueBar <= 0.92f)
+        {
+            player.sprite = sprites[5];
+
+        }
+       
 
         // O valueBar é maior ou igual a 0.16f E o valueBar é menor ou igual a 0.30f?
         // qualquer de 0.16f a 0.30f
