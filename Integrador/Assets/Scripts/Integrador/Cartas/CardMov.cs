@@ -20,7 +20,7 @@ public class CardMov : MonoBehaviour
     //[SerializeField] bool has3D;                  // Tem Collider 3D?
     public int cardIndex;
 
-    
+    [Header("Duplo click")]
 
 
     // >>> EVENTO PARA O MANAGER <<<
