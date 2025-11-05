@@ -26,6 +26,8 @@ public class CardMov : MonoBehaviour
     // >>> EVENTO PARA O MANAGER <<<
     public System.Action<CardMov, SwipeDecision> OnSwipeReleased;
 
+    public static object UI { get; internal set; }
+
     void Awake()
     {
         cam = Camera.main;

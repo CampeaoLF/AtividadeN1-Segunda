@@ -20,6 +20,8 @@ public class SwitchScene : MonoBehaviour
             
     }
 
+   
+
     public void RestartCurrentScene()
     {
        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
