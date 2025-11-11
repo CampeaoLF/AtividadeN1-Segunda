@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Integrador/Configura\xE7oes.unity"
     guid: b70a93fb895dd12418d9e4d402fefe76
   - enabled: 1
@@ -38,7 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Integrador/Fase6.unity
     guid: eadab4aed0684274eb8d37ccd5de9cbe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Integrador/Derrota.unity
     guid: 7b0d8a218d508a847aec4549f0defad5
   - enabled: 1
